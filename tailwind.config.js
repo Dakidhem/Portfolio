@@ -15,6 +15,9 @@ module.exports = {
       minHeight: {
         main: "calc(100vh-65px)",
       },
+      fontFamily: {
+        burtons: "burtons",
+      },
     },
   },
   plugins: [],
