@@ -1,5 +1,5 @@
 import Avt from "../../../public/images/avt/avt8.png";
-import Kagu from "../../../public/images/kagu/kagu.png";
+import Kagu from "../../../public/images/kagu/kagu.PNG";
 import Avt_admin from "../../../public/images/avt_admin/avt_admin.png";
 import HealthHub from "../../../public/images/healthhub/health_hub.png";
 
