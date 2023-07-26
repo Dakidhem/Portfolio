@@ -1,9 +1,17 @@
 import { TbArrowNarrowRight } from "react-icons/tb";
 import Avt from "../../../../public/images/avt/avt8.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 export default function Project({ project }) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <motion.div
+      whileHover={{
+        scale: 1.05,
+        transition: { duration: 0.2 },
+      }}
+      className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+    >
       <a href="#">
         <Image className="rounded-t-lg" src={project.main_picture} alt="avt" />
       </a>
@@ -25,6 +33,6 @@ export default function Project({ project }) {
           <TbArrowNarrowRight className="text-2xl ml-2" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
