@@ -1,10 +1,6 @@
 "use client";
 import Avt_main from "../../../../public/images/avt/avt8.png";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import Slider from "react-slick";
 
 export default function SimpleSlider() {
   var settings = {
