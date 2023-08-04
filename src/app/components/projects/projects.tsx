@@ -59,8 +59,8 @@ const ProjectsSection = () => {
                   className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
               md:gap-5 justify-between text-textDark"
                 >
-                  {project.tools.map((tool) => {
-                    return <li>{tool}</li>;
+                  {project.tools.map((tool, index) => {
+                    return <li key={index}>{tool}</li>;
                   })}
                 </ul>
                 <div className="text-2xl flex gap-4">
