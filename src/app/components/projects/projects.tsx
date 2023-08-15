@@ -26,7 +26,8 @@ const ProjectsSection = () => {
               }`}
             >
               <a
-                href="https://react-dbmovies.vercel.app/"
+                // href={`/projects/` + project.project_link}
+                href="#"
                 target="_blank"
                 className="w-full xl:w-1/2 h-auto relative group"
                 title="Open live project"
@@ -48,12 +49,10 @@ const ProjectsSection = () => {
                   <p className="font-titleFont text-textGreen text-sm tracking-wide">
                     {project.project_type}
                   </p>
-                  <h3 className="text-2xl font-bold">{project.project_name}</h3>
+                  <h3 className="text-2xl font-bold"></h3>
                 </div>
-                <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-                  A TMDB-inspired application. Search for movies, TV shows, or
-                  actors, rate them, create lists for yourself and friends, and
-                  discover new things about the world of cinema.
+                <p className="bg-[#112240] text-center text-sm md:text-base p-2 md:p-6 rounded-md">
+                  {project.project_description}
                 </p>
                 <ul
                   className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
@@ -64,22 +63,25 @@ const ProjectsSection = () => {
                   })}
                 </ul>
                 <div className="text-2xl flex gap-4">
-                  <a
-                    href="https://github.com/denvudd/react-dbmovies.github.io"
-                    className="hover:text-textGreen duration-300"
-                    target="_blank"
-                    title="Open GitHub Repo"
-                  >
-                    <TbBrandGithub />
-                  </a>
-                  <a
-                    href="https://react-dbmovies.vercel.app/"
-                    className="hover:text-textGreen duration-300"
-                    target="_blank"
-                    title="Open live project"
-                  >
-                    <RxOpenInNewWindow />
-                  </a>
+                  {project.live ? (
+                    <a
+                      href={project.project_url}
+                      className="hover:text-textGreen duration-300"
+                      target="_blank"
+                      title="Open live project"
+                    >
+                      <RxOpenInNewWindow />
+                    </a>
+                  ) : (
+                    <a
+                      href={project.project_url}
+                      className="hover:text-textGreen duration-300"
+                      target="_blank"
+                      title="Open GitHub Repo"
+                    >
+                      <TbBrandGithub />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

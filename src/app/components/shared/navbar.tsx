@@ -46,9 +46,9 @@ const NavBar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="block text-2xl text-textGreen font-bold">
+          <a href="/" className="block text-2xl text-textGreen font-bold">
             K. Mehdi
-          </span>
+          </a>
         </motion.div>
         <div className="hidden mdl:flex items-center gap-7">
           <nav>
@@ -64,39 +64,11 @@ const NavBar = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.1 }}
                 >
+                  <span className="text-textGreen">01.</span>
                   Home
                 </motion.li>
               </Link>
-              <Link
-                href="#about"
-                className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
-              cursor-pointer duration-300 nav-link"
-                onClick={handleScroll}
-              >
-                <motion.li
-                  initial={{ y: -10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.1, delay: 0.1 }}
-                >
-                  <span className="text-textGreen">01.</span>
-                  About
-                </motion.li>
-              </Link>
-              <Link
-                href="#experience"
-                className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
-              cursor-pointer duration-300 nav-link"
-                onClick={handleScroll}
-              >
-                <motion.li
-                  initial={{ y: -10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.1, delay: 0.2 }}
-                >
-                  <span className="text-textGreen">02.</span>
-                  Experience
-                </motion.li>
-              </Link>
+
               <Link
                 href="#projects"
                 className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
@@ -108,12 +80,12 @@ const NavBar = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.1, delay: 0.3 }}
                 >
-                  <span className="text-textGreen">03.</span>
+                  <span className="text-textGreen">02.</span>
                   Projects
                 </motion.li>
               </Link>
               <Link
-                href="#contact"
+                href="#tools"
                 className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
               cursor-pointer duration-300 nav-link"
                 onClick={handleScroll}
@@ -123,13 +95,13 @@ const NavBar = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.1, delay: 0.4 }}
                 >
-                  <span className="text-textGreen">04.</span>
-                  Contact
+                  <span className="text-textGreen">03.</span>
+                  Tools
                 </motion.li>
               </Link>
             </ul>
           </nav>
-          <a href="/assets/my_resume.pdf" target="_blank">
+          <a href="/pdf/my_resume.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -336,7 +308,7 @@ const NavBar = () => {
                 transition={{ delay: 1.2, ease: "easeIn" }}
                 className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
               >
-                dmitry.yurin2020@gmail.com
+                m.kadiri@esi-sba.dz
               </motion.a>
             </motion.div>
           </div>

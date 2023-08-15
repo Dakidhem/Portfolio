@@ -9,6 +9,7 @@ import BackgroundHover from "@/app/components/misc/backgroundHover";
 import { motion } from "framer-motion";
 import LeftBar from "./components/shared/leftBar";
 import RightBar from "./components/shared/rightBar";
+import "swiper/css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +34,6 @@ export default function RootLayout({
         <Navbar />
 
         <main className="min-h-main max-w-[80%] mx-auto">{children}</main>
-
-        <Footer />
       </body>
     </html>
   );

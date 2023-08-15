@@ -38,11 +38,7 @@ export default function Hero() {
           DevOps and Cloud to efficiently deploy and maintain robust web
           solutions. Enthusiastic about harnessing the power of AI to create
           innovative and intelligent applications that enhance user experiences.
-          <a
-            href="https://resume.io/r/8L1UDNrIw"
-            target="_blank"
-            className="block"
-          >
+          <a href="/pdf/my_resume.pdf" target="_blank" className="block">
             <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
               Learn more in my resume
               <span
@@ -52,7 +48,7 @@ export default function Hero() {
             </span>
           </a>
         </motion.p>
-        <a href="https://github.com/denvudd">
+        <a href="https://github.com/dakidhem">
           <motion.button
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -64,7 +60,7 @@ export default function Hero() {
           </motion.button>
         </a>
       </div>
-      <div className="flex justify-center items-center mt-16 lgl:mt-0">
+      <div className="hidden lgl:flex justify-center items-center mt-16 lgl:mt-0">
         <motion.div
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

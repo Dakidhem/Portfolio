@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Techs = () => {
   return (
-    <div className="my-16 text-white">
+    <div className="my-16 text-white" id="tools">
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         transition={{ delay: 0.1 }}
