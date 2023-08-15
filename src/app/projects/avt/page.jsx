@@ -17,7 +17,7 @@ export default function AvtPage() {
   };
   return (
     <div className="w-100">
-      <div>
+      {/* <div>
         <Slider {...settings}>
           {avt.images.map((image) => {
             return (
@@ -35,7 +35,7 @@ export default function AvtPage() {
             );
           })}
         </Slider>
-      </div>
+      </div> */}
     </div>
   );
 }
