@@ -166,37 +166,8 @@ const NavBar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.1 }}
                     >
-                      Home
-                    </motion.li>
-                  </Link>
-                  <Link
-                    href="#about"
-                    className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
-              cursor-pointer duration-300 nav-link"
-                    onClick={handleScroll}
-                  >
-                    <motion.li
-                      initial={{ x: 20, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.1 }}
-                    >
                       <span className="text-textGreen">01. </span>
-                      About
-                    </motion.li>
-                  </Link>
-                  <Link
-                    href="#experience"
-                    className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
-              cursor-pointer duration-300 nav-link"
-                    onClick={handleScroll}
-                  >
-                    <motion.li
-                      initial={{ x: 20, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.2 }}
-                    >
-                      <span className="text-textGreen">02. </span>
-                      Experience
+                      Home
                     </motion.li>
                   </Link>
                   <Link
@@ -210,12 +181,12 @@ const NavBar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.3 }}
                     >
-                      <span className="text-textGreen">03. </span>
+                      <span className="text-textGreen">02. </span>
                       Projects
                     </motion.li>
                   </Link>
                   <Link
-                    href="#contact"
+                    href="#tools"
                     className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen
               cursor-pointer duration-300 nav-link"
                     onClick={handleScroll}
@@ -225,12 +196,12 @@ const NavBar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.4 }}
                     >
-                      <span className="text-textGreen">04. </span>
-                      Contact
+                      <span className="text-textGreen">03. </span>
+                      Tools
                     </motion.li>
                   </Link>
                 </ul>
-                <a href="/assets/my_resume.pdf" target="_blank">
+                <a href="/pdf/my_resume.pdf" target="_blank">
                   <motion.button
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -244,7 +215,8 @@ const NavBar = () => {
 
                 <div className="flex gap-4">
                   <motion.a
-                    href=""
+                    href="https://github.com/dakidhem"
+                    target="_blank"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.7, ease: "easeIn" }}
@@ -258,7 +230,8 @@ const NavBar = () => {
                     </span>
                   </motion.a>
                   <motion.a
-                    href=""
+                    href="https://www.linkedin.com/in/mehdi-kadiri-05178b1b7"
+                    target="_blank"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.8, ease: "easeIn" }}
@@ -272,7 +245,8 @@ const NavBar = () => {
                     </span>
                   </motion.a>
                   <motion.a
-                    href=""
+                    href="https://www.instagram.com/mehdikadiri/"
+                    target="_blank"
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.9, ease: "easeIn" }}
@@ -285,24 +259,10 @@ const NavBar = () => {
                       <SlSocialInstagram />
                     </span>
                   </motion.a>
-                  <motion.a
-                    href=""
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, ease: "easeIn" }}
-                  >
-                    <span
-                      className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen 
-        text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer 
-        hover:-translate-y-2 transition-all duration-300"
-                    >
-                      <SlSocialTwitter />
-                    </span>
-                  </motion.a>
                 </div>
               </div>
               <motion.a
-                href="mailto:dmitry.yurin2020@gmail.com"
+                href="mailto:m.kadiri@esi-sba.dz"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, ease: "easeIn" }}
