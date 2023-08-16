@@ -137,7 +137,7 @@ const NavBar = () => {
         {showMenu && (
           <div
             ref={(node) => (ref.current = node)}
-            className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50
+            className="fixed mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50
             flex flex-col items-end"
             onClick={handleClick}
           >

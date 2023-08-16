@@ -35,7 +35,7 @@ export default function Hero() {
           Highly skilled Full Stack Web Developer with a passion for building
           dynamic and user-friendly applications. Proficient in front-end and
           back-end technologies, and equipped with foundational knowledge in
-          DevOps and Cloud to efficiently deploy and maintain robust web
+          DevOps and Cloud, to efficiently deploy and maintain robust web
           solutions. Enthusiastic about harnessing the power of AI to create
           innovative and intelligent applications that enhance user experiences.
           <a href="/pdf/my_resume.pdf" target="_blank" className="block">

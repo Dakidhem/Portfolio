@@ -12,7 +12,7 @@ const Techs = () => {
         whileInView={{ y: 0, opacity: 1 }}
       >
         <h4 className=" sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
-          Front end
+          Front-end
         </h4>
         <p className=" w-[80%] md:w-full mx-auto text-xs md:text-sm lg:text-[16px] mt-2 mb-6 md:mb-8 text-center">
           I try to use the best frontend technologies to make my life easier.
@@ -48,7 +48,7 @@ const Techs = () => {
         whileInView={{ y: 0, opacity: 1 }}
       >
         <h4 className=" sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
-          Back end
+          Back-end
         </h4>
         <p className=" w-[80%] md:w-full mx-auto text-xs md:text-sm lg:text-[16px] mt-2 mb-6 md:mb-8 text-center">
           I try to use the best frontend technologies to make my life easier.

@@ -10,7 +10,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="max-w-container mx-auto lgl:px-20 py-24">
       <motion.div
-        className="w-full flex flex-col items-center justify-center gap-28 mt-10"
+        className="w-full flex flex-col items-center justify-center gap-28 mt-10 "
         initial={{ y: 20, opacity: 0 }}
         transition={{ delay: 0.1 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
           return (
             <div
               key={project.project_id}
-              className={`flex flex-col gap-6 ${
+              className={`flex flex-col gap-6 max-w-[100%] ${
                 project.project_id % 2 === 0
                   ? "xl:flex-row-reverse"
                   : "xl:flex-row"
@@ -27,7 +27,7 @@ const ProjectsSection = () => {
             >
               <a
                 // href={`/projects/` + project.project_link}
-                href="#"
+                href={project.project_url}
                 target="_blank"
                 className="w-full xl:w-1/2 h-auto relative group"
                 title="Open live project"
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
                   <Image
                     src={project.main_picture}
                     alt="Project 1"
-                    className="relative w-full h-full object-contain rounded-md"
+                    className="relative w-full h-full max-w-container object-contain rounded-md"
                     loading="lazy"
                   />
                 </div>
@@ -55,8 +55,8 @@ const ProjectsSection = () => {
                   {project.project_description}
                 </p>
                 <ul
-                  className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2
-              md:gap-5 justify-between text-textDark"
+                  className="text-xs md:text-sm font-titleFont tracking-wide flex flex-wrap gap-2
+              md:gap-5 justify-center text-textDark max-w-[100%]"
                 >
                   {project.tools.map((tool, index) => {
                     return <li key={index}>{tool}</li>;

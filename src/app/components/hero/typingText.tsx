@@ -14,7 +14,7 @@ export default function TypingText({ className }: any) {
 
   const toRotate = [
     "Full stack Developer",
-    "DevOps engineer",
+    "Cloud Engineer",
     "Ai enthusiast",
     "Scroll down to see more!",
   ];
