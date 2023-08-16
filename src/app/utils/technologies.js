@@ -14,12 +14,14 @@ import git from "../../../public/images/techs_icones/git.png";
 import github from "../../../public/images/techs_icones/github.svg";
 import docker from "../../../public/images/techs_icones/docker.png";
 import aws from "../../../public/images/techs_icones/aws.png";
+import kubernetes from "../../../public/images/techs_icones/kubernetes.png";
 //backend
 import django from "../../../public/images/techs_icones/django.png";
 import nodejs from "../../../public/images/techs_icones/nodejs.png";
 import mongodb from "../../../public/images/techs_icones/mongodb.png";
 import sql from "../../../public/images/techs_icones/sql.png";
 import mysql from "../../../public/images/techs_icones/mysql.png";
+import springboot from "../../../public/images/techs_icones/springboot.png";
 //aws services
 import EC2 from "../../../public/images/techs_icones/EC2.png";
 import ECS from "../../../public/images/techs_icones/ECS.png";
@@ -48,6 +50,7 @@ const technologies = {
   backend: [
     { id: 1, name: "Django", icone: django },
     { id: 2, name: "Node JS", icone: nodejs },
+    { id: 2, name: "Spring Boot", icone: springboot },
     { id: 3, name: "Sql", icone: sql },
     { id: 4, name: "MySql", icone: mysql },
     { id: 5, name: "MongoDb", icone: mongodb },
@@ -56,7 +59,8 @@ const technologies = {
     { id: 1, name: "Git", icone: git },
     { id: 2, name: "Github", icone: github },
     { id: 3, name: "Docker", icone: docker },
-    { id: 4, name: "Aws", icone: aws },
+    { id: 4, name: "Kubernetes", icone: kubernetes },
+    { id: 5, name: "Aws", icone: aws },
   ],
   aws_services: [
     { id: 1, name: "EC2", icone: EC2 },

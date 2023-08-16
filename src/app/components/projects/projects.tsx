@@ -56,7 +56,7 @@ const ProjectsSection = () => {
                 </p>
                 <ul
                   className="text-xs md:text-sm font-titleFont tracking-wide flex flex-wrap gap-2
-              md:gap-5 justify-center text-textDark max-w-[100%]"
+              md:gap-5 justify-center text-textDark md:max-w-[90%]"
                 >
                   {project.tools.map((tool, index) => {
                     return <li key={index}>{tool}</li>;

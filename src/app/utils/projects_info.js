@@ -40,6 +40,8 @@ const projects_info = [
       "TailwindCss",
       "AlpineJs",
       "MySql",
+      "Git",
+      "GitHub",
       "Sockets",
       "TensorFlow",
       "Flwr",
